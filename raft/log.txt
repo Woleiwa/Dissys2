@@ -1,0 +1,1333 @@
+Test: leader backs up quickly over incorrect follower logs ...
+2024/11/28 18:16:56 Term 1 Sever 4, Start election! 
+2024/11/28 18:16:56 Term 1, Sever 1, get request from server 4! 
+2024/11/28 18:16:56 Term 1, Sever 1 agree to vote for server 4! 
+2024/11/28 18:16:56 Term 1 Sever 0, Start election! 
+2024/11/28 18:16:56 Term 1, Sever 4, get request from server 0! 
+2024/11/28 18:16:56 Term 1, Sever 4 disagree to vote for server 0! 
+2024/11/28 18:16:56 Term 1, Sever 2, get request from server 4! 
+2024/11/28 18:16:56 Term 1, Sever 2 agree to vote for server 4! 
+2024/11/28 18:16:56 Term 1 Leader 4 get elected as leader
+2024/11/28 18:16:56 Log matched!Server 3 at Term 1
+2024/11/28 18:16:56 Term 1, Sever 1, get request from server 0! 
+2024/11/28 18:16:56 Term 1, Sever 1 disagree to vote for server 0! 
+2024/11/28 18:16:56 Term 1, Sever 2, get request from server 0! 
+2024/11/28 18:16:56 Term 1, Sever 2 disagree to vote for server 0! 
+2024/11/28 18:16:56 Term 1, Sever 3, get request from server 0! 
+2024/11/28 18:16:56 Term 1, Sever 3 agree to vote for server 0! 
+2024/11/28 18:16:56 Leader 4 starts command 331880507065047929 at index 1, term 1
+2024/11/28 18:16:56 Term 1, Sever 3, get request from server 4! 
+2024/11/28 18:16:56 Term 1, Sever 3 disagree to vote for server 4! 
+2024/11/28 18:16:56 Term 1, Sever 0, get request from server 4! 
+2024/11/28 18:16:56 Term 1, Sever 0 disagree to vote for server 4! 
+2024/11/28 18:16:56 Log matched!Server 3 at Term 1
+2024/11/28 18:16:56 Server 3 update log to 1
+2024/11/28 18:16:56 Before Leader 4 sends log to server 3 , match index 0 and next index 1
+2024/11/28 18:16:56 Leader 4 sends log to server 3 , match index 1 and next index 2 is accepted
+2024/11/28 18:16:56 Log matched!Server 2 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Server 0 update log to 1
+2024/11/28 18:16:56 Before Leader 4 sends log to server 0 , match index 0 and next index 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 1 and next index 2 is accepted
+2024/11/28 18:16:56 Leader 4 update committedIndex 1
+2024/11/28 18:16:56 Term 1 Server 4 update as a Leader.
+2024/11/28 18:16:56 Server 4 apply msg 1, 331880507065047929
+2024/11/28 18:16:56 Log matched!Server 1 at Term 1
+2024/11/28 18:16:56 Server 1 update log to 1
+2024/11/28 18:16:56 Term 1 Server 1 update as a follower.
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Before Leader 4 sends log to server 1 , match index 0 and next index 1
+2024/11/28 18:16:56 Leader 4 sends log to server 1 , match index 1 and next index 2 is accepted
+2024/11/28 18:16:56 Server 1 apply msg 1, 331880507065047929
+2024/11/28 18:16:56 Log matched!Server 2 at Term 1
+2024/11/28 18:16:56 Server 2 update log to 1
+2024/11/28 18:16:56 Term 1 Server 2 update as a follower.
+2024/11/28 18:16:56 Before Leader 4 sends log to server 2 , match index 0 and next index 1
+2024/11/28 18:16:56 Leader 4 sends log to server 2 , match index 1 and next index 2 is accepted
+2024/11/28 18:16:56 Server 2 apply msg 1, 331880507065047929
+2024/11/28 18:16:56 Log matched!Server 1 at Term 1
+2024/11/28 18:16:56 Log matched!Server 3 at Term 1
+2024/11/28 18:16:56 Term 1 Server 3 update as a follower.
+2024/11/28 18:16:56 Server 3 apply msg 1, 331880507065047929
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Term 1 Server 0 update as a follower.
+2024/11/28 18:16:56 Log unmatched!Server 1 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 1 , match index 0 and next index 1 not accepted
+2024/11/28 18:16:56 Server 0 apply msg 1, 331880507065047929
+2024/11/28 18:16:56 Log matched!Server 2 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 3 at Term 1
+2024/11/28 18:16:56 Log matched!Server 2 at Term 1
+2024/11/28 18:16:56 Log matched!Server 1 at Term 1
+2024/11/28 18:16:56 Before Leader 4 sends log to server 1 , match index 0 and next index 1
+2024/11/28 18:16:56 Leader 4 sends log to server 1 , match index 1 and next index 2 is accepted
+2024/11/28 18:16:56 Log matched!Server 1 at Term 1
+2024/11/28 18:16:56 Log matched!Server 3 at Term 1
+2024/11/28 18:16:56 Log matched!Server 2 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 3 at Term 1
+2024/11/28 18:16:56 Log matched!Server 2 at Term 1
+2024/11/28 18:16:56 Log matched!Server 1 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 3 at Term 1
+2024/11/28 18:16:56 Log matched!Server 2 at Term 1
+2024/11/28 18:16:56 Log matched!Server 1 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 3 at Term 1
+2024/11/28 18:16:56 Log matched!Server 1 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 2 at Term 1
+2024/11/28 18:16:56 Log matched!Server 1 at Term 1
+2024/11/28 18:16:56 Log matched!Server 2 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 3 at Term 1
+2024/11/28 18:16:56 Log matched!Server 3 at Term 1
+2024/11/28 18:16:56 Log matched!Server 2 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 1 at Term 1
+2024/11/28 18:16:56 Log matched!Server 2 at Term 1
+2024/11/28 18:16:56 Log matched!Server 1 at Term 1
+2024/11/28 18:16:56 Log matched!Server 3 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 1 at Term 1
+2024/11/28 18:16:56 Log matched!Server 2 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 3 at Term 1
+2024/11/28 18:16:56 Log matched!Server 3 at Term 1
+2024/11/28 18:16:56 Log matched!Server 1 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+Server 1 disconnected!
+Server 2 disconnected!
+Server 3 disconnected!
+2024/11/28 18:16:56 Leader 4 starts command 4088906923512864815 at index 2, term 1
+2024/11/28 18:16:56 Leader 4 starts command 7685868967513402759 at index 3, term 1
+2024/11/28 18:16:56 Leader 4 starts command 8730106048645250846 at index 4, term 1
+2024/11/28 18:16:56 Leader 4 starts command 4804840500102626265 at index 5, term 1
+2024/11/28 18:16:56 Leader 4 starts command 4981721776275358424 at index 6, term 1
+2024/11/28 18:16:56 Leader 4 starts command 3295017284854099114 at index 7, term 1
+2024/11/28 18:16:56 Leader 4 starts command 9137346308159243913 at index 8, term 1
+2024/11/28 18:16:56 Leader 4 starts command 6282681339791515471 at index 9, term 1
+2024/11/28 18:16:56 Leader 4 starts command 3874648363806918692 at index 10, term 1
+2024/11/28 18:16:56 Leader 4 starts command 54326271151900239 at index 11, term 1
+2024/11/28 18:16:56 Leader 4 starts command 5587676857562291353 at index 12, term 1
+2024/11/28 18:16:56 Leader 4 starts command 754564882747169130 at index 13, term 1
+2024/11/28 18:16:56 Leader 4 starts command 6144661716708385373 at index 14, term 1
+2024/11/28 18:16:56 Leader 4 starts command 4193337840229301865 at index 15, term 1
+2024/11/28 18:16:56 Leader 4 starts command 1969886376368898263 at index 16, term 1
+2024/11/28 18:16:56 Leader 4 starts command 4654448191957155029 at index 17, term 1
+2024/11/28 18:16:56 Leader 4 starts command 4348174147047027965 at index 18, term 1
+2024/11/28 18:16:56 Leader 4 starts command 8577747561749350083 at index 19, term 1
+2024/11/28 18:16:56 Leader 4 starts command 3421469658425199977 at index 20, term 1
+2024/11/28 18:16:56 Leader 4 starts command 1376838979026795923 at index 21, term 1
+2024/11/28 18:16:56 Leader 4 starts command 8563403904792530622 at index 22, term 1
+2024/11/28 18:16:56 Leader 4 starts command 4758550884022045094 at index 23, term 1
+2024/11/28 18:16:56 Leader 4 starts command 383477217583619160 at index 24, term 1
+2024/11/28 18:16:56 Leader 4 starts command 4799038571111063349 at index 25, term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Server 0 update log to 25
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Before Leader 4 sends log to server 0 , match index 1 and next index 2
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 25 and next index 26 is accepted
+2024/11/28 18:16:56 Leader 4 starts command 1230513731642428413 at index 26, term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 starts command 2790560277549597301 at index 27, term 1
+2024/11/28 18:16:56 Leader 4 starts command 5885977159906678581 at index 28, term 1
+2024/11/28 18:16:56 Leader 4 starts command 8873772417103567270 at index 29, term 1
+2024/11/28 18:16:56 Leader 4 starts command 1852372566474376373 at index 30, term 1
+2024/11/28 18:16:56 Leader 4 starts command 8349363847693491763 at index 31, term 1
+2024/11/28 18:16:56 Leader 4 starts command 8137775256950174137 at index 32, term 1
+2024/11/28 18:16:56 Leader 4 starts command 4386734005117448148 at index 33, term 1
+2024/11/28 18:16:56 Leader 4 starts command 7259625033569140803 at index 34, term 1
+2024/11/28 18:16:56 Leader 4 starts command 8908988165292379760 at index 35, term 1
+2024/11/28 18:16:56 Leader 4 starts command 3112581840181809427 at index 36, term 1
+2024/11/28 18:16:56 Leader 4 starts command 3015529570188453196 at index 37, term 1
+2024/11/28 18:16:56 Leader 4 starts command 7243487445576587385 at index 38, term 1
+2024/11/28 18:16:56 Leader 4 starts command 860605926496164858 at index 39, term 1
+2024/11/28 18:16:56 Leader 4 starts command 7072700154542166014 at index 40, term 1
+2024/11/28 18:16:56 Leader 4 starts command 2550422079012819600 at index 41, term 1
+2024/11/28 18:16:56 Leader 4 starts command 7072416410606860884 at index 42, term 1
+2024/11/28 18:16:56 Leader 4 starts command 4644123229420884305 at index 43, term 1
+2024/11/28 18:16:56 Leader 4 starts command 7183331389679979085 at index 44, term 1
+2024/11/28 18:16:56 Leader 4 starts command 1309698020611396186 at index 45, term 1
+2024/11/28 18:16:56 Leader 4 starts command 8532812617212131661 at index 46, term 1
+2024/11/28 18:16:56 Leader 4 starts command 4215931536680452899 at index 47, term 1
+2024/11/28 18:16:56 Leader 4 starts command 2264678698609273774 at index 48, term 1
+2024/11/28 18:16:56 Leader 4 starts command 7251391968806487184 at index 49, term 1
+2024/11/28 18:16:56 Leader 4 starts command 1478780871371111434 at index 50, term 1
+2024/11/28 18:16:56 Leader 4 starts command 7872692100960320628 at index 51, term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Server 0 update log to 51
+2024/11/28 18:16:56 Before Leader 4 sends log to server 0 , match index 25 and next index 26
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 51 and next index 52 is accepted
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Server 0 update log to 25
+2024/11/28 18:16:56 Log matched!Server 0 at Term 1
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 50 and next index 51 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 49 and next index 50 not accepted
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 48 and next index 49 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 47 and next index 48 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 46 and next index 47 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 45 and next index 46 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 44 and next index 45 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 43 and next index 44 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 42 and next index 43 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 41 and next index 42 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 40 and next index 41 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 39 and next index 40 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 38 and next index 39 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 37 and next index 38 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 36 and next index 37 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 35 and next index 36 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 34 and next index 35 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 33 and next index 34 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 32 and next index 33 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 31 and next index 32 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 30 and next index 31 not accepted
+2024/11/28 18:16:56 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:56 Leader 4 sends log to server 0 , match index 29 and next index 30 not accepted
+2024/11/28 18:16:57 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:57 Leader 4 sends log to server 0 , match index 28 and next index 29 not accepted
+2024/11/28 18:16:57 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:57 Leader 4 sends log to server 0 , match index 27 and next index 28 not accepted
+2024/11/28 18:16:57 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:57 Leader 4 sends log to server 0 , match index 26 and next index 27 not accepted
+2024/11/28 18:16:57 Log unmatched!Server 0 at Term 1
+2024/11/28 18:16:57 Leader 4 sends log to server 0 , match index 25 and next index 26 not accepted
+2024/11/28 18:16:57 Log matched!Server 0 at Term 1
+2024/11/28 18:16:57 Server 0 update log to 51
+2024/11/28 18:16:57 Before Leader 4 sends log to server 0 , match index 25 and next index 26
+2024/11/28 18:16:57 Leader 4 sends log to server 0 , match index 51 and next index 52 is accepted
+2024/11/28 18:16:57 Log matched!Server 0 at Term 1
+2024/11/28 18:16:57 Log matched!Server 0 at Term 1
+Server 4 disconnected!
+Server 0 disconnected!
+Server 1 connected!
+Server 2 connected!
+Server 3 connected!
+2024/11/28 18:16:57 Term 2 Sever 1, Start election! 
+2024/11/28 18:16:57 Term 2, Sever 2, get request from server 1! 
+2024/11/28 18:16:57 Term 2, Sever 2 agree to vote for server 1! 
+2024/11/28 18:16:57 Term 2, Sever 3, get request from server 1! 
+2024/11/28 18:16:57 Term 2, Sever 3 agree to vote for server 1! 
+2024/11/28 18:16:57 Term 2 Leader 1 get elected as leader
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Leader 1 starts command 6155527926884814932 at index 2, term 2
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Server 2 update log to 2
+2024/11/28 18:16:57 Before Leader 1 sends log to server 2 , match index 1 and next index 2
+2024/11/28 18:16:57 Leader 1 sends log to server 2 , match index 2 and next index 3 is accepted
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Server 3 update log to 2
+2024/11/28 18:16:57 Before Leader 1 sends log to server 3 , match index 1 and next index 2
+2024/11/28 18:16:57 Leader 1 sends log to server 3 , match index 2 and next index 3 is accepted
+2024/11/28 18:16:57 Leader 1 update committedIndex 2
+2024/11/28 18:16:57 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:57 Server 1 apply msg 2, 6155527926884814932
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:57 Server 2 apply msg 2, 6155527926884814932
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:57 Server 3 apply msg 2, 6155527926884814932
+2024/11/28 18:16:57 Leader 1 starts command 8654410460797652088 at index 3, term 2
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Server 2 update log to 3
+2024/11/28 18:16:57 Before Leader 1 sends log to server 2 , match index 2 and next index 3
+2024/11/28 18:16:57 Leader 1 sends log to server 2 , match index 3 and next index 4 is accepted
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Server 3 update log to 3
+2024/11/28 18:16:57 Before Leader 1 sends log to server 3 , match index 2 and next index 3
+2024/11/28 18:16:57 Leader 1 sends log to server 3 , match index 3 and next index 4 is accepted
+2024/11/28 18:16:57 Leader 1 update committedIndex 3
+2024/11/28 18:16:57 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:57 Server 1 apply msg 3, 8654410460797652088
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:57 Server 2 apply msg 3, 8654410460797652088
+2024/11/28 18:16:57 Server 3 apply msg 3, 8654410460797652088
+2024/11/28 18:16:57 Leader 1 starts command 1077317807670004666 at index 4, term 2
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Server 2 update log to 4
+2024/11/28 18:16:57 Before Leader 1 sends log to server 2 , match index 3 and next index 4
+2024/11/28 18:16:57 Leader 1 sends log to server 2 , match index 4 and next index 5 is accepted
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Server 3 update log to 4
+2024/11/28 18:16:57 Before Leader 1 sends log to server 3 , match index 3 and next index 4
+2024/11/28 18:16:57 Leader 1 sends log to server 3 , match index 4 and next index 5 is accepted
+2024/11/28 18:16:57 Leader 1 update committedIndex 4
+2024/11/28 18:16:57 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:57 Server 1 apply msg 4, 1077317807670004666
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:57 Server 2 apply msg 4, 1077317807670004666
+2024/11/28 18:16:57 Server 3 apply msg 4, 1077317807670004666
+2024/11/28 18:16:57 Leader 1 starts command 2487602697885089070 at index 5, term 2
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Server 2 update log to 5
+2024/11/28 18:16:57 Before Leader 1 sends log to server 2 , match index 4 and next index 5
+2024/11/28 18:16:57 Leader 1 sends log to server 2 , match index 5 and next index 6 is accepted
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Server 3 update log to 5
+2024/11/28 18:16:57 Before Leader 1 sends log to server 3 , match index 4 and next index 5
+2024/11/28 18:16:57 Leader 1 sends log to server 3 , match index 5 and next index 6 is accepted
+2024/11/28 18:16:57 Leader 1 update committedIndex 5
+2024/11/28 18:16:57 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:57 Server 1 apply msg 5, 2487602697885089070
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:57 Server 2 apply msg 5, 2487602697885089070
+2024/11/28 18:16:57 Server 3 apply msg 5, 2487602697885089070
+2024/11/28 18:16:57 Leader 1 starts command 7303458353690264595 at index 6, term 2
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Server 2 update log to 6
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Server 3 update log to 6
+2024/11/28 18:16:57 Before Leader 1 sends log to server 2 , match index 5 and next index 6
+2024/11/28 18:16:57 Leader 1 sends log to server 2 , match index 6 and next index 7 is accepted
+2024/11/28 18:16:57 Before Leader 1 sends log to server 3 , match index 5 and next index 6
+2024/11/28 18:16:57 Leader 1 sends log to server 3 , match index 6 and next index 7 is accepted
+2024/11/28 18:16:57 Leader 1 update committedIndex 6
+2024/11/28 18:16:57 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:57 Server 1 apply msg 6, 7303458353690264595
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:57 Server 2 apply msg 6, 7303458353690264595
+2024/11/28 18:16:57 Server 3 apply msg 6, 7303458353690264595
+2024/11/28 18:16:57 Leader 1 starts command 7769052080196413506 at index 7, term 2
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Server 2 update log to 7
+2024/11/28 18:16:57 Before Leader 1 sends log to server 2 , match index 6 and next index 7
+2024/11/28 18:16:57 Leader 1 sends log to server 2 , match index 7 and next index 8 is accepted
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Server 3 update log to 7
+2024/11/28 18:16:57 Before Leader 1 sends log to server 3 , match index 6 and next index 7
+2024/11/28 18:16:57 Leader 1 sends log to server 3 , match index 7 and next index 8 is accepted
+2024/11/28 18:16:57 Leader 1 update committedIndex 7
+2024/11/28 18:16:57 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:57 Server 1 apply msg 7, 7769052080196413506
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:57 Server 3 apply msg 7, 7769052080196413506
+2024/11/28 18:16:57 Server 2 apply msg 7, 7769052080196413506
+2024/11/28 18:16:57 Leader 1 starts command 168605913842260116 at index 8, term 2
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Server 2 update log to 8
+2024/11/28 18:16:57 Before Leader 1 sends log to server 2 , match index 7 and next index 8
+2024/11/28 18:16:57 Leader 1 sends log to server 2 , match index 8 and next index 9 is accepted
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Server 3 update log to 8
+2024/11/28 18:16:57 Before Leader 1 sends log to server 3 , match index 7 and next index 8
+2024/11/28 18:16:57 Leader 1 sends log to server 3 , match index 8 and next index 9 is accepted
+2024/11/28 18:16:57 Leader 1 update committedIndex 8
+2024/11/28 18:16:57 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:57 Server 1 apply msg 8, 168605913842260116
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:57 Server 2 apply msg 8, 168605913842260116
+2024/11/28 18:16:57 Server 3 apply msg 8, 168605913842260116
+2024/11/28 18:16:57 Leader 1 starts command 2809417745090231451 at index 9, term 2
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Server 2 update log to 9
+2024/11/28 18:16:57 Before Leader 1 sends log to server 2 , match index 8 and next index 9
+2024/11/28 18:16:57 Leader 1 sends log to server 2 , match index 9 and next index 10 is accepted
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Server 3 update log to 9
+2024/11/28 18:16:57 Before Leader 1 sends log to server 3 , match index 8 and next index 9
+2024/11/28 18:16:57 Leader 1 sends log to server 3 , match index 9 and next index 10 is accepted
+2024/11/28 18:16:57 Leader 1 update committedIndex 9
+2024/11/28 18:16:57 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:57 Server 1 apply msg 9, 2809417745090231451
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:57 Server 2 apply msg 9, 2809417745090231451
+2024/11/28 18:16:57 Server 3 apply msg 9, 2809417745090231451
+2024/11/28 18:16:57 Leader 1 starts command 62740707384981459 at index 10, term 2
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Server 2 update log to 10
+2024/11/28 18:16:57 Before Leader 1 sends log to server 2 , match index 9 and next index 10
+2024/11/28 18:16:57 Leader 1 sends log to server 2 , match index 10 and next index 11 is accepted
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Server 3 update log to 10
+2024/11/28 18:16:57 Before Leader 1 sends log to server 3 , match index 9 and next index 10
+2024/11/28 18:16:57 Leader 1 sends log to server 3 , match index 10 and next index 11 is accepted
+2024/11/28 18:16:57 Leader 1 update committedIndex 10
+2024/11/28 18:16:57 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:57 Server 1 apply msg 10, 62740707384981459
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:57 Server 2 apply msg 10, 62740707384981459
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:57 Server 3 apply msg 10, 62740707384981459
+2024/11/28 18:16:57 Leader 1 starts command 4433833854574519256 at index 11, term 2
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Server 2 update log to 11
+2024/11/28 18:16:57 Before Leader 1 sends log to server 2 , match index 10 and next index 11
+2024/11/28 18:16:57 Leader 1 sends log to server 2 , match index 11 and next index 12 is accepted
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Server 3 update log to 11
+2024/11/28 18:16:57 Before Leader 1 sends log to server 3 , match index 10 and next index 11
+2024/11/28 18:16:57 Leader 1 sends log to server 3 , match index 11 and next index 12 is accepted
+2024/11/28 18:16:57 Leader 1 update committedIndex 11
+2024/11/28 18:16:57 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:57 Server 1 apply msg 11, 4433833854574519256
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:57 Server 2 apply msg 11, 4433833854574519256
+2024/11/28 18:16:57 Server 3 apply msg 11, 4433833854574519256
+2024/11/28 18:16:57 Leader 1 starts command 743547707536974769 at index 12, term 2
+2024/11/28 18:16:57 Log matched!Server 2 at Term 2
+2024/11/28 18:16:57 Server 2 update log to 12
+2024/11/28 18:16:57 Log matched!Server 3 at Term 2
+2024/11/28 18:16:57 Server 3 update log to 12
+2024/11/28 18:16:57 Before Leader 1 sends log to server 3 , match index 11 and next index 12
+2024/11/28 18:16:57 Leader 1 sends log to server 3 , match index 12 and next index 13 is accepted
+2024/11/28 18:16:57 Term 2 Sever 0, Start election! 
+2024/11/28 18:16:57 Before Leader 1 sends log to server 2 , match index 11 and next index 12
+2024/11/28 18:16:57 Leader 1 sends log to server 2 , match index 12 and next index 13 is accepted
+2024/11/28 18:16:57 Leader 1 update committedIndex 12
+2024/11/28 18:16:57 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:57 Server 1 apply msg 12, 743547707536974769
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 3 apply msg 12, 743547707536974769
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 12, 743547707536974769
+2024/11/28 18:16:58 Leader 1 starts command 305433209591866617 at index 13, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 13
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 12 and next index 13
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 13 and next index 14 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 13
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 12 and next index 13
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 13 and next index 14 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 13
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 13, 305433209591866617
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 13, 305433209591866617
+2024/11/28 18:16:58 Server 3 apply msg 13, 305433209591866617
+2024/11/28 18:16:58 Leader 1 starts command 1620801273693978175 at index 14, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 14
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 13 and next index 14
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 14 and next index 15 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 14
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 13 and next index 14
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 14 and next index 15 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 14
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 14, 1620801273693978175
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Server 3 apply msg 14, 1620801273693978175
+2024/11/28 18:16:58 Server 2 apply msg 14, 1620801273693978175
+2024/11/28 18:16:58 Leader 1 starts command 6347077105968342270 at index 15, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 15
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 14 and next index 15
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 15 and next index 16 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 15
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 14 and next index 15
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 15 and next index 16 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 15
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 15, 6347077105968342270
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 15, 6347077105968342270
+2024/11/28 18:16:58 Server 3 apply msg 15, 6347077105968342270
+2024/11/28 18:16:58 Leader 1 starts command 7639447163138404610 at index 16, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 16
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 15 and next index 16
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 16 and next index 17 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 16
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 15 and next index 16
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 16 and next index 17 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 16
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 16, 7639447163138404610
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 16, 7639447163138404610
+2024/11/28 18:16:58 Server 3 apply msg 16, 7639447163138404610
+2024/11/28 18:16:58 Leader 1 starts command 5681567802944936965 at index 17, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 17
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 16 and next index 17
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 17 and next index 18 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 17
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 16 and next index 17
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 17 and next index 18 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 17
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 17, 5681567802944936965
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 17, 5681567802944936965
+2024/11/28 18:16:58 Server 3 apply msg 17, 5681567802944936965
+2024/11/28 18:16:58 Leader 1 starts command 8208607616343022416 at index 18, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 18
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 17 and next index 18
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 18 and next index 19 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 18
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 17 and next index 18
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 18 and next index 19 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 18
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 18, 8208607616343022416
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 18, 8208607616343022416
+2024/11/28 18:16:58 Server 3 apply msg 18, 8208607616343022416
+2024/11/28 18:16:58 Leader 1 starts command 5049478176622838015 at index 19, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 19
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 18 and next index 19
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 19 and next index 20 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 19
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 18 and next index 19
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 19 and next index 20 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 19
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 19, 5049478176622838015
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Server 3 apply msg 19, 5049478176622838015
+2024/11/28 18:16:58 Server 2 apply msg 19, 5049478176622838015
+2024/11/28 18:16:58 Leader 1 starts command 32642629864445002 at index 20, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 20
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 19 and next index 20
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 20 and next index 21 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 20
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 19 and next index 20
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 20 and next index 21 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 20
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 20, 32642629864445002
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 20, 32642629864445002
+2024/11/28 18:16:58 Server 3 apply msg 20, 32642629864445002
+2024/11/28 18:16:58 Leader 1 starts command 4401084216398277171 at index 21, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 21
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 20 and next index 21
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 21 and next index 22 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 21
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 20 and next index 21
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 21 and next index 22 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 21
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 21, 4401084216398277171
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 21, 4401084216398277171
+2024/11/28 18:16:58 Server 3 apply msg 21, 4401084216398277171
+2024/11/28 18:16:58 Leader 1 starts command 1042249328897565977 at index 22, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 22
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 22
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 21 and next index 22
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 22 and next index 23 is accepted
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 21 and next index 22
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 22 and next index 23 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 22
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 22, 1042249328897565977
+2024/11/28 18:16:58 Term 3 Sever 0, Start election! 
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 22, 1042249328897565977
+2024/11/28 18:16:58 Server 3 apply msg 22, 1042249328897565977
+2024/11/28 18:16:58 Leader 1 starts command 6251031845046845886 at index 23, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 23
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 22 and next index 23
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 23 and next index 24 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 23
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 22 and next index 23
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 23 and next index 24 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 23
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 23, 6251031845046845886
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 3 apply msg 23, 6251031845046845886
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 23, 6251031845046845886
+2024/11/28 18:16:58 Leader 1 starts command 4755740413786683082 at index 24, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 24
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 23 and next index 24
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 24 and next index 25 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 24
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 23 and next index 24
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 24 and next index 25 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 24
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 24, 4755740413786683082
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 24, 4755740413786683082
+2024/11/28 18:16:58 Server 3 apply msg 24, 4755740413786683082
+2024/11/28 18:16:58 Leader 1 starts command 3849443447897240236 at index 25, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 25
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 25
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 24 and next index 25
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 25 and next index 26 is accepted
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 24 and next index 25
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 25 and next index 26 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 25
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 25, 3849443447897240236
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 25, 3849443447897240236
+2024/11/28 18:16:58 Server 3 apply msg 25, 3849443447897240236
+2024/11/28 18:16:58 Leader 1 starts command 1087287407060967590 at index 26, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 26
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 25 and next index 26
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 26 and next index 27 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 26
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 25 and next index 26
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 26 and next index 27 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 26
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 26, 1087287407060967590
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 26, 1087287407060967590
+2024/11/28 18:16:58 Server 3 apply msg 26, 1087287407060967590
+2024/11/28 18:16:58 Leader 1 starts command 3835636454366402178 at index 27, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 27
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 26 and next index 27
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 27
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 27 and next index 28 is accepted
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 26 and next index 27
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 27 and next index 28 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 27
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 27, 3835636454366402178
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 27, 3835636454366402178
+2024/11/28 18:16:58 Server 3 apply msg 27, 3835636454366402178
+2024/11/28 18:16:58 Leader 1 starts command 5187237223536876433 at index 28, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 28
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 27 and next index 28
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 28 and next index 29 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 28
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 27 and next index 28
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 28 and next index 29 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 28
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 28, 5187237223536876433
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Server 3 apply msg 28, 5187237223536876433
+2024/11/28 18:16:58 Server 2 apply msg 28, 5187237223536876433
+2024/11/28 18:16:58 Leader 1 starts command 1590945182951169657 at index 29, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 29
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 28 and next index 29
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 29 and next index 30 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 29
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 28 and next index 29
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 29 and next index 30 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 29
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 29, 1590945182951169657
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 29, 1590945182951169657
+2024/11/28 18:16:58 Server 3 apply msg 29, 1590945182951169657
+2024/11/28 18:16:58 Leader 1 starts command 4246239223162087812 at index 30, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 30
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 29 and next index 30
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 30 and next index 31 is accepted
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 30
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 29 and next index 30
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 30 and next index 31 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 30
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 30, 4246239223162087812
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:58 Server 2 apply msg 30, 4246239223162087812
+2024/11/28 18:16:58 Server 3 apply msg 30, 4246239223162087812
+2024/11/28 18:16:58 Leader 1 starts command 5164843043575883763 at index 31, term 2
+2024/11/28 18:16:58 Log matched!Server 2 at Term 2
+2024/11/28 18:16:58 Server 2 update log to 31
+2024/11/28 18:16:58 Log matched!Server 3 at Term 2
+2024/11/28 18:16:58 Server 3 update log to 31
+2024/11/28 18:16:58 Before Leader 1 sends log to server 2 , match index 30 and next index 31
+2024/11/28 18:16:58 Leader 1 sends log to server 2 , match index 31 and next index 32 is accepted
+2024/11/28 18:16:58 Before Leader 1 sends log to server 3 , match index 30 and next index 31
+2024/11/28 18:16:58 Leader 1 sends log to server 3 , match index 31 and next index 32 is accepted
+2024/11/28 18:16:58 Leader 1 update committedIndex 31
+2024/11/28 18:16:58 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:58 Server 1 apply msg 31, 5164843043575883763
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 31, 5164843043575883763
+2024/11/28 18:16:59 Server 3 apply msg 31, 5164843043575883763
+2024/11/28 18:16:59 Leader 1 starts command 7757309931280925637 at index 32, term 2
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 32
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 31 and next index 32
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 32 and next index 33 is accepted
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 32
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 31 and next index 32
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 32 and next index 33 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 32
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 32, 7757309931280925637
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 32, 7757309931280925637
+2024/11/28 18:16:59 Server 3 apply msg 32, 7757309931280925637
+2024/11/28 18:16:59 Leader 1 starts command 5747311357485632877 at index 33, term 2
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 33
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 32 and next index 33
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 33 and next index 34 is accepted
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 33
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 32 and next index 33
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 33 and next index 34 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 33
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 33, 5747311357485632877
+2024/11/28 18:16:59 Leader 1 update committedIndex 33
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Term 4 Sever 0, Start election! 
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 33, 5747311357485632877
+2024/11/28 18:16:59 Server 3 apply msg 33, 5747311357485632877
+2024/11/28 18:16:59 Leader 1 starts command 541504113250227672 at index 34, term 2
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 34
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 33 and next index 34
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 34 and next index 35 is accepted
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 34
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 33 and next index 34
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 34 and next index 35 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 34
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 34, 541504113250227672
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 34, 541504113250227672
+2024/11/28 18:16:59 Server 3 apply msg 34, 541504113250227672
+2024/11/28 18:16:59 Leader 1 starts command 3364071804318633035 at index 35, term 2
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 35
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 34 and next index 35
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 35 and next index 36 is accepted
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 35
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 34 and next index 35
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 35 and next index 36 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 35
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 35, 3364071804318633035
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 35, 3364071804318633035
+2024/11/28 18:16:59 Server 3 apply msg 35, 3364071804318633035
+2024/11/28 18:16:59 Leader 1 starts command 4813511315471755861 at index 36, term 2
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 36
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 36
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 35 and next index 36
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 36 and next index 37 is accepted
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 35 and next index 36
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 36 and next index 37 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 36
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 36, 4813511315471755861
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 36, 4813511315471755861
+2024/11/28 18:16:59 Server 3 apply msg 36, 4813511315471755861
+2024/11/28 18:16:59 Leader 1 starts command 4430084871174306866 at index 37, term 2
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 37
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 36 and next index 37
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 37 and next index 38 is accepted
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 37
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 36 and next index 37
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 37 and next index 38 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 37
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 37, 4430084871174306866
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 3 apply msg 37, 4430084871174306866
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 37, 4430084871174306866
+2024/11/28 18:16:59 Leader 1 starts command 1576084819401700326 at index 38, term 2
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 38
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 37 and next index 38
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 38
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 38 and next index 39 is accepted
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 37 and next index 38
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 38 and next index 39 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 38
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 38, 1576084819401700326
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 38, 1576084819401700326
+2024/11/28 18:16:59 Server 3 apply msg 38, 1576084819401700326
+2024/11/28 18:16:59 Leader 1 starts command 6612131402756691046 at index 39, term 2
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 39
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 39
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 38 and next index 39
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 39 and next index 40 is accepted
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 38 and next index 39
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 39 and next index 40 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 39
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 39, 6612131402756691046
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 39, 6612131402756691046
+2024/11/28 18:16:59 Server 3 apply msg 39, 6612131402756691046
+2024/11/28 18:16:59 Leader 1 starts command 6459307462213117247 at index 40, term 2
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 40
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 39 and next index 40
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 40 and next index 41 is accepted
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 40
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 39 and next index 40
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 40 and next index 41 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 40
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 40, 6459307462213117247
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 40, 6459307462213117247
+2024/11/28 18:16:59 Server 3 apply msg 40, 6459307462213117247
+2024/11/28 18:16:59 Leader 1 starts command 4982249699121816789 at index 41, term 2
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 41
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 40 and next index 41
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 41 and next index 42 is accepted
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 41
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 40 and next index 41
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 41 and next index 42 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 41
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 41, 4982249699121816789
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 41, 4982249699121816789
+2024/11/28 18:16:59 Server 3 apply msg 41, 4982249699121816789
+2024/11/28 18:16:59 Leader 1 starts command 7841345582165688742 at index 42, term 2
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 42
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 41 and next index 42
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 42 and next index 43 is accepted
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 42
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 41 and next index 42
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 42 and next index 43 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 42
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 42, 7841345582165688742
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 3 apply msg 42, 7841345582165688742
+2024/11/28 18:16:59 Server 2 apply msg 42, 7841345582165688742
+2024/11/28 18:16:59 Leader 1 starts command 4073314386871357226 at index 43, term 2
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 43
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 42 and next index 43
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 43 and next index 44 is accepted
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 43
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 42 and next index 43
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 43 and next index 44 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 43
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 43, 4073314386871357226
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 43, 4073314386871357226
+2024/11/28 18:16:59 Server 3 apply msg 43, 4073314386871357226
+2024/11/28 18:16:59 Leader 1 starts command 304311318750929257 at index 44, term 2
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 44
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 43 and next index 44
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 44 and next index 45 is accepted
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 44
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 43 and next index 44
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 44 and next index 45 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 44
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 44, 304311318750929257
+2024/11/28 18:16:59 Term 5 Sever 0, Start election! 
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Server 3 apply msg 44, 304311318750929257
+2024/11/28 18:16:59 Server 2 apply msg 44, 304311318750929257
+2024/11/28 18:16:59 Leader 1 starts command 2908454818434485788 at index 45, term 2
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 45
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 44 and next index 45
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 45 and next index 46 is accepted
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 45
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 44 and next index 45
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 45 and next index 46 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 45
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 45, 2908454818434485788
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 45, 2908454818434485788
+2024/11/28 18:16:59 Server 3 apply msg 45, 2908454818434485788
+2024/11/28 18:16:59 Leader 1 starts command 8237672621127595391 at index 46, term 2
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 46
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 45 and next index 46
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 46 and next index 47 is accepted
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 46
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 45 and next index 46
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 46 and next index 47 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 46
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 46, 8237672621127595391
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 46, 8237672621127595391
+2024/11/28 18:16:59 Server 3 apply msg 46, 8237672621127595391
+2024/11/28 18:16:59 Leader 1 starts command 1390974372129582985 at index 47, term 2
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 47
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 46 and next index 47
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 47 and next index 48 is accepted
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 47
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 46 and next index 47
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 47 and next index 48 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 47
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 47, 1390974372129582985
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 47, 1390974372129582985
+2024/11/28 18:16:59 Server 3 apply msg 47, 1390974372129582985
+2024/11/28 18:16:59 Leader 1 starts command 3314451065780892000 at index 48, term 2
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 48
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 47 and next index 48
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 48 and next index 49 is accepted
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 48
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 47 and next index 48
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 48 and next index 49 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 48
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 48, 3314451065780892000
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 3 apply msg 48, 3314451065780892000
+2024/11/28 18:16:59 Server 2 apply msg 48, 3314451065780892000
+2024/11/28 18:16:59 Leader 1 starts command 5924336185438894653 at index 49, term 2
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 49
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 48 and next index 49
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 49 and next index 50 is accepted
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 49
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 48 and next index 49
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 49 and next index 50 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 49
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 49, 5924336185438894653
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Term 2 Server 2 update as a follower.
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Term 2 Server 3 update as a follower.
+2024/11/28 18:16:59 Server 2 apply msg 49, 5924336185438894653
+2024/11/28 18:16:59 Server 3 apply msg 49, 5924336185438894653
+2024/11/28 18:16:59 Leader 1 starts command 117974269135027822 at index 50, term 2
+2024/11/28 18:16:59 Log matched!Server 2 at Term 2
+2024/11/28 18:16:59 Server 2 update log to 50
+2024/11/28 18:16:59 Before Leader 1 sends log to server 2 , match index 49 and next index 50
+2024/11/28 18:16:59 Leader 1 sends log to server 2 , match index 50 and next index 51 is accepted
+2024/11/28 18:16:59 Log matched!Server 3 at Term 2
+2024/11/28 18:16:59 Server 3 update log to 50
+2024/11/28 18:16:59 Before Leader 1 sends log to server 3 , match index 49 and next index 50
+2024/11/28 18:16:59 Leader 1 sends log to server 3 , match index 50 and next index 51 is accepted
+2024/11/28 18:16:59 Leader 1 update committedIndex 50
+2024/11/28 18:16:59 Term 2 Server 1 update as a Leader.
+2024/11/28 18:16:59 Server 1 apply msg 50, 117974269135027822
+2024/11/28 18:17:00 Log matched!Server 2 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Term 2 Server 3 update as a follower.
+2024/11/28 18:17:00 Term 2 Server 2 update as a follower.
+2024/11/28 18:17:00 Server 2 apply msg 50, 117974269135027822
+2024/11/28 18:17:00 Server 3 apply msg 50, 117974269135027822
+2024/11/28 18:17:00 Leader 1 starts command 6543824547141431905 at index 51, term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Server 3 update log to 51
+2024/11/28 18:17:00 Before Leader 1 sends log to server 3 , match index 50 and next index 51
+2024/11/28 18:17:00 Leader 1 sends log to server 3 , match index 51 and next index 52 is accepted
+2024/11/28 18:17:00 Log matched!Server 2 at Term 2
+2024/11/28 18:17:00 Server 2 update log to 51
+2024/11/28 18:17:00 Before Leader 1 sends log to server 2 , match index 50 and next index 51
+2024/11/28 18:17:00 Leader 1 sends log to server 2 , match index 51 and next index 52 is accepted
+2024/11/28 18:17:00 Leader 1 update committedIndex 51
+2024/11/28 18:17:00 Term 2 Server 1 update as a Leader.
+2024/11/28 18:17:00 Server 1 apply msg 51, 6543824547141431905
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Term 2 Server 3 update as a follower.
+2024/11/28 18:17:00 Log matched!Server 2 at Term 2
+2024/11/28 18:17:00 Term 2 Server 2 update as a follower.
+2024/11/28 18:17:00 Server 3 apply msg 51, 6543824547141431905
+2024/11/28 18:17:00 Server 2 apply msg 51, 6543824547141431905
+2024/11/28 18:17:00 Log matched!Server 2 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 2 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 2 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Term 6 Sever 0, Start election! 
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 2 at Term 2
+2024/11/28 18:17:00 Log matched!Server 2 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 2 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 2 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 2 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 2 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+Server 2 disconnected!
+2024/11/28 18:17:00 Leader 1 starts command 8223531955103278137 at index 52, term 2
+2024/11/28 18:17:00 Leader 1 starts command 3777027586990442527 at index 53, term 2
+2024/11/28 18:17:00 Leader 1 starts command 7893495774748872469 at index 54, term 2
+2024/11/28 18:17:00 Leader 1 starts command 1679646419249350208 at index 55, term 2
+2024/11/28 18:17:00 Leader 1 starts command 8811548607102347986 at index 56, term 2
+2024/11/28 18:17:00 Leader 1 starts command 6039747689281979713 at index 57, term 2
+2024/11/28 18:17:00 Leader 1 starts command 2121992315198474992 at index 58, term 2
+2024/11/28 18:17:00 Leader 1 starts command 1296378850983711492 at index 59, term 2
+2024/11/28 18:17:00 Leader 1 starts command 2356379067911668531 at index 60, term 2
+2024/11/28 18:17:00 Leader 1 starts command 753831595537468829 at index 61, term 2
+2024/11/28 18:17:00 Leader 1 starts command 5408816561172575555 at index 62, term 2
+2024/11/28 18:17:00 Leader 1 starts command 1636260686930221353 at index 63, term 2
+2024/11/28 18:17:00 Leader 1 starts command 4008590168439805746 at index 64, term 2
+2024/11/28 18:17:00 Leader 1 starts command 3295133323761722503 at index 65, term 2
+2024/11/28 18:17:00 Leader 1 starts command 4465326651012143689 at index 66, term 2
+2024/11/28 18:17:00 Leader 1 starts command 2047602905934347407 at index 67, term 2
+2024/11/28 18:17:00 Leader 1 starts command 4457398146997378614 at index 68, term 2
+2024/11/28 18:17:00 Leader 1 starts command 5442629986257230881 at index 69, term 2
+2024/11/28 18:17:00 Leader 1 starts command 9187140123121648850 at index 70, term 2
+2024/11/28 18:17:00 Leader 1 starts command 3145362931091779392 at index 71, term 2
+2024/11/28 18:17:00 Leader 1 starts command 2467496261231233391 at index 72, term 2
+2024/11/28 18:17:00 Leader 1 starts command 6175090078048603368 at index 73, term 2
+2024/11/28 18:17:00 Leader 1 starts command 5000680466668519952 at index 74, term 2
+2024/11/28 18:17:00 Leader 1 starts command 2971444773661323980 at index 75, term 2
+2024/11/28 18:17:00 Leader 1 starts command 8343537095058964732 at index 76, term 2
+2024/11/28 18:17:00 Leader 1 starts command 3716564878550841179 at index 77, term 2
+2024/11/28 18:17:00 Leader 1 starts command 1404158454515139947 at index 78, term 2
+2024/11/28 18:17:00 Leader 1 starts command 1280540134431207661 at index 79, term 2
+2024/11/28 18:17:00 Leader 1 starts command 5910133467280782023 at index 80, term 2
+2024/11/28 18:17:00 Leader 1 starts command 4836207712545081710 at index 81, term 2
+2024/11/28 18:17:00 Leader 1 starts command 5259762854437387907 at index 82, term 2
+2024/11/28 18:17:00 Leader 1 starts command 1115813543794242409 at index 83, term 2
+2024/11/28 18:17:00 Leader 1 starts command 5867358679410096037 at index 84, term 2
+2024/11/28 18:17:00 Leader 1 starts command 6254698656965502220 at index 85, term 2
+2024/11/28 18:17:00 Leader 1 starts command 1035649097235560152 at index 86, term 2
+2024/11/28 18:17:00 Leader 1 starts command 2206170338471752822 at index 87, term 2
+2024/11/28 18:17:00 Leader 1 starts command 6079915757949938047 at index 88, term 2
+2024/11/28 18:17:00 Leader 1 starts command 4276960059851919671 at index 89, term 2
+2024/11/28 18:17:00 Leader 1 starts command 7667131064020710601 at index 90, term 2
+2024/11/28 18:17:00 Leader 1 starts command 7709717607971611847 at index 91, term 2
+2024/11/28 18:17:00 Leader 1 starts command 7254471293991108197 at index 92, term 2
+2024/11/28 18:17:00 Leader 1 starts command 8327861982136202333 at index 93, term 2
+2024/11/28 18:17:00 Leader 1 starts command 8564915748631321760 at index 94, term 2
+2024/11/28 18:17:00 Leader 1 starts command 2215000768531394116 at index 95, term 2
+2024/11/28 18:17:00 Leader 1 starts command 8517819415511493109 at index 96, term 2
+2024/11/28 18:17:00 Leader 1 starts command 5491867995608555329 at index 97, term 2
+2024/11/28 18:17:00 Leader 1 starts command 8216111499739174648 at index 98, term 2
+2024/11/28 18:17:00 Leader 1 starts command 586530591450036042 at index 99, term 2
+2024/11/28 18:17:00 Leader 1 starts command 1383983730353536059 at index 100, term 2
+2024/11/28 18:17:00 Leader 1 starts command 6960961050263067584 at index 101, term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Server 3 update log to 101
+2024/11/28 18:17:00 Before Leader 1 sends log to server 3 , match index 51 and next index 52
+2024/11/28 18:17:00 Leader 1 sends log to server 3 , match index 101 and next index 102 is accepted
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Term 7 Sever 0, Start election! 
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:00 Log matched!Server 3 at Term 2
+2024/11/28 18:17:01 Log matched!Server 3 at Term 2
+2024/11/28 18:17:01 Log matched!Server 3 at Term 2
+Server 0 disconnected!
+Server 1 disconnected!
+Server 2 disconnected!
+Server 3 disconnected!
+Server 4 disconnected!
+Server 4 connected!
+Server 0 connected!
+Server 2 connected!
+2024/11/28 18:17:01 Leader 4 starts command 2434430518481996684 at index 52, term 1
+2024/11/28 18:17:01 Leader 4 lose leadership at Term 7
+2024/11/28 18:17:01 Log matched!Server 2 at Term 7
+2024/11/28 18:17:01 Server 2 update log to 52
+2024/11/28 18:17:01 Term 8 Sever 4, Start election! 
+2024/11/28 18:17:01 Term 8, Sever 0, get request from server 4! 
+2024/11/28 18:17:01 Term 8, Sever 0 agree to vote for server 4! 
+2024/11/28 18:17:01 Term 8, Sever 2, get request from server 4! 
+2024/11/28 18:17:01 Term 8, Sever 2 disagree to vote for server 4! 
+2024/11/28 18:17:01 Term 9 Sever 4, Start election! 
+2024/11/28 18:17:01 Term 9, Sever 0, get request from server 4! 
+2024/11/28 18:17:01 Term 9, Sever 0 agree to vote for server 4! 
+2024/11/28 18:17:01 Term 9, Sever 2, get request from server 4! 
+2024/11/28 18:17:01 Term 9, Sever 2 disagree to vote for server 4! 
+2024/11/28 18:17:02 Term 10 Sever 2, Start election! 
+2024/11/28 18:17:02 Term 10, Sever 4, get request from server 2! 
+2024/11/28 18:17:02 Term 10, Sever 4 agree to vote for server 2! 
+2024/11/28 18:17:02 Term 10, Sever 0, get request from server 2! 
+2024/11/28 18:17:02 Term 10, Sever 0 agree to vote for server 2! 
+2024/11/28 18:17:02 Term 10 Leader 2 get elected as leader
+2024/11/28 18:17:02 Log matched!Server 4 at Term 10
+2024/11/28 18:17:02 Term 10 Server 4 update as a follower.
+2024/11/28 18:17:02 Server 4 apply msg 2, 4088906923512864815
+2024/11/28 18:17:02 apply error: commit index=2 server=4 4088906923512864815 != server=3 6155527926884814932
+
